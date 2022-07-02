@@ -1,0 +1,310 @@
+.team-body:before {
+    content: "";
+    background: url("../assets/background.png") no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 0 60px;
+    position: relative;
+  }
+  .left-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .star-icon img {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 90px;
+  }
+  .container {
+    color: white;
+    margin-top: -40px;
+  }
+  
+  .text-body {
+    text-align: center;
+    letter-spacing: -0.015em;
+    margin-top: -300px;
+  }
+  .text-body h2 {
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: -20px;
+  }
+  .text-body h3 {
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 100%;
+    margin-bottom: -15px;
+  }
+  .second-image {
+    transition: all 5s ease-in-out;
+  }
+  .second-image:hover {
+    transform: rotate(25deg);
+  }
+  
+  .yellow-star {
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+  }
+  
+  .coin-pot {
+    /* width: 50vw; */
+    height: 10px;
+    margin: 0 auto;
+  }
+  
+  .pot-image {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+  }
+  .star-image {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: -340px;
+  }
+  .star-image img {
+    width: 50px;
+  }
+  .coin-left {
+    position: absolute;
+    animation: animateCoin 6s infinite;
+    left: 25%;
+  }
+  .coin-right {
+    position: absolute;
+    animation: animateCoin 8s infinite;
+    right: 25%;
+  }
+  @keyframes animateCoin {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(25px);
+    }
+  
+    70% {
+      transform: translateY(-25px);
+    }
+  
+    70% {
+      transform: translateY(-1px);
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.17);
+    transition: 0.3s;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.39) -213.5%,
+      rgba(255, 255, 255, 0)
+    );
+    padding: 7px;
+  }
+  .card ol {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .image-container {
+    position: relative;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card2 {
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 160%;
+  }
+  .card2 p {
+    margin-top: 15px;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .button {
+    margin-top: 30px;
+    width: 225px;
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    background: #ecab03;
+    color: #ffffff;
+  }
+  .arrow-image {
+    margin-left: 30px;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(-100deg);
+    }
+  }
+  .rotateLightBeam {
+    width: 100%;
+    margin: 60px auto;
+    margin-bottom: -150px;
+    z-index: 1;
+    transform-origin: bottom center;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @media only screen and (max-width: 1326px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 936px) {
+    .card {
+      width: 55%;
+    }
+  }
+  
+  @media only screen and (max-width: 696px) {
+    .card {
+      width: 65%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .text-body {
+      font-size: 300px;
+    }
+    .button {
+      margin-top: 20px;
+      width: 200px;
+      height: 50px;
+    }
+  
+    .coin-right {
+      position: absolute;
+    }
+    .coin-left {
+      position: absolute;
+    }
+  
+    .card2 p {
+      margin-top: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 15px;
+    }
+  
+    .star-image {
+      margin-left: 130px;
+      margin-top: -600px;
+      line-height: 10px;
+    }
+    .rotateLightBeam {
+      position: relative;
+      margin-bottom: -20px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .button {
+      margin-bottom: 110px;
+    }
+  
+   .pot-image {
+     width:400px
+   }
+   .coin-right {
+    right: 20px;
+    top: 900px;
+    bottom: -50%;
+  }
+  
+  .coin-left {
+    left: 7%;
+    top: 820px;
+    bottom: -45%;
+  }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    /* .button {
+      margin-bottom: 120px;
+    }
+  
+   .pot-image {
+     width:400px
+   }
+   .coin-right {
+    right: 20px;
+    bottom: -50%;
+  } */
+  
+  /* .coin-left {
+    left: 7%;
+    bottom: -50%;
+  } */
+  .pot-image {
+    width:300px
+  }
+  
+  .rotateLightBeam {
+    margin-bottom: -40px;
+  }
+  
+  .coin-left, .coin-right {
+    width: 100px;
+  }
+  }
+  
+  @media screen and (max-width: 397px){
+    .coin-right {
+        right: 20px;
+        bottom: -24%;
+        /* width: 100px; */
+      }
+      
+      .coin-left {
+        left: 7%;
+        bottom: -20%;
+        /* width: 100px; */
+      }
+  }
